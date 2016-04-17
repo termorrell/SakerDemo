@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E991BA371CC380B800502CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991BA361CC380B800502CF1 /* AppDelegate.swift */; };
-		E991BA391CC380B800502CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991BA381CC380B800502CF1 /* ViewController.swift */; };
+		E991BA391CC380B800502CF1 /* SKDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991BA381CC380B800502CF1 /* SKDViewController.swift */; };
 		E991BA3C1CC380B800502CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E991BA3A1CC380B800502CF1 /* Main.storyboard */; };
 		E991BA3E1CC380B800502CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E991BA3D1CC380B800502CF1 /* Assets.xcassets */; };
 		E991BA411CC380B800502CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E991BA3F1CC380B800502CF1 /* LaunchScreen.storyboard */; };
+		E991BA4B1CC3899E00502CF1 /* HirukoPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E991BA481CC383BC00502CF1 /* HirukoPro-Book.otf */; };
+		E991BA4C1CC3899E00502CF1 /* HirukoPro-Lt.otf in Resources */ = {isa = PBXBuildFile; fileRef = E991BA491CC383BC00502CF1 /* HirukoPro-Lt.otf */; };
+		E991BA521CC38FD000502CF1 /* SKDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991BA511CC38FD000502CF1 /* SKDNavigationController.swift */; };
+		E991BA581CC3C1AC00502CF1 /* SKDAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991BA571CC3C1AC00502CF1 /* SKDAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E991BA331CC380B800502CF1 /* SakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E991BA361CC380B800502CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E991BA381CC380B800502CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E991BA381CC380B800502CF1 /* SKDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDViewController.swift; sourceTree = "<group>"; };
 		E991BA3B1CC380B800502CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E991BA3D1CC380B800502CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E991BA401CC380B800502CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E991BA421CC380B800502CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E991BA481CC383BC00502CF1 /* HirukoPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HirukoPro-Book.otf"; sourceTree = "<group>"; };
+		E991BA491CC383BC00502CF1 /* HirukoPro-Lt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HirukoPro-Lt.otf"; sourceTree = "<group>"; };
+		E991BA511CC38FD000502CF1 /* SKDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDNavigationController.swift; sourceTree = "<group>"; };
+		E991BA571CC3C1AC00502CF1 /* SKDAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		E991BA351CC380B800502CF1 /* SakerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E991BA361CC380B800502CF1 /* AppDelegate.swift */,
-				E991BA381CC380B800502CF1 /* ViewController.swift */,
-				E991BA3A1CC380B800502CF1 /* Main.storyboard */,
-				E991BA3D1CC380B800502CF1 /* Assets.xcassets */,
-				E991BA3F1CC380B800502CF1 /* LaunchScreen.storyboard */,
-				E991BA421CC380B800502CF1 /* Info.plist */,
+				E991BA4D1CC38F8A00502CF1 /* UI */,
+				E991BA4E1CC38F9600502CF1 /* Resources */,
 			);
 			path = SakerDemo;
+			sourceTree = "<group>";
+		};
+		E991BA4A1CC383C500502CF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E991BA481CC383BC00502CF1 /* HirukoPro-Book.otf */,
+				E991BA491CC383BC00502CF1 /* HirukoPro-Lt.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E991BA4D1CC38F8A00502CF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E991BA361CC380B800502CF1 /* AppDelegate.swift */,
+				E991BA501CC38FAE00502CF1 /* View Controller */,
+				E991BA4F1CC38FA700502CF1 /* View */,
+				E991BA3A1CC380B800502CF1 /* Main.storyboard */,
+				E991BA3F1CC380B800502CF1 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E991BA4E1CC38F9600502CF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E991BA3D1CC380B800502CF1 /* Assets.xcassets */,
+				E991BA421CC380B800502CF1 /* Info.plist */,
+				E991BA4A1CC383C500502CF1 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E991BA4F1CC38FA700502CF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E991BA501CC38FAE00502CF1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E991BA381CC380B800502CF1 /* SKDViewController.swift */,
+				E991BA511CC38FD000502CF1 /* SKDNavigationController.swift */,
+				E991BA571CC3C1AC00502CF1 /* SKDAnimator.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +148,7 @@
 				TargetAttributes = {
 					E991BA321CC380B800502CF1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 29C784RGJ8;
 					};
 				};
 			};
@@ -122,6 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E991BA4B1CC3899E00502CF1 /* HirukoPro-Book.otf in Resources */,
+				E991BA4C1CC3899E00502CF1 /* HirukoPro-Lt.otf in Resources */,
 				E991BA411CC380B800502CF1 /* LaunchScreen.storyboard in Resources */,
 				E991BA3E1CC380B800502CF1 /* Assets.xcassets in Resources */,
 				E991BA3C1CC380B800502CF1 /* Main.storyboard in Resources */,
@@ -135,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E991BA391CC380B800502CF1 /* ViewController.swift in Sources */,
+				E991BA391CC380B800502CF1 /* SKDViewController.swift in Sources */,
 				E991BA371CC380B800502CF1 /* AppDelegate.swift in Sources */,
+				E991BA521CC38FD000502CF1 /* SKDNavigationController.swift in Sources */,
+				E991BA581CC3C1AC00502CF1 /* SKDAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SakerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.standrews.cs.s120004648.CS4099.SakerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SakerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.standrews.cs.s120004648.CS4099.SakerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

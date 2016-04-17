@@ -1,25 +1,732 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Mo-rL-KwD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HirukoPro-Book.otf">
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+        </mutableArray>
+        <mutableArray key="HirukoPro-Lt.otf">
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Content View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="register" id="BYZ-38-t0r" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEh-YA-oVp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register-icon" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-Nu-03N">
+                                        <rect key="frame" x="461" y="0.0" width="387" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="R0S-YZ-7Uq"/>
+                                    <constraint firstAttribute="bottom" secondItem="fnv-Nu-03N" secondAttribute="bottom" id="jLJ-ZO-XOp"/>
+                                    <constraint firstItem="fnv-Nu-03N" firstAttribute="centerX" secondItem="tEh-YA-oVp" secondAttribute="centerX" constant="143" id="oFk-xt-3xL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSP-5A-2vi">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.47450980392156861" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tb-x8-D5t">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254901960786" green="0.43529411764705883" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvd-Ie-Zfx">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.47450980392156861" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6tb-x8-D5t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="0aA-zR-eh8"/>
+                            <constraint firstItem="oSP-5A-2vi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tEh-YA-oVp" secondAttribute="bottom" id="GLh-b0-hEn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6tb-x8-D5t" secondAttribute="trailing" constant="369" id="OhV-Hg-P9d"/>
+                            <constraint firstItem="rvd-Ie-Zfx" firstAttribute="top" secondItem="6tb-x8-D5t" secondAttribute="bottom" constant="20" id="P3V-ei-fHo"/>
+                            <constraint firstItem="6tb-x8-D5t" firstAttribute="top" secondItem="oSP-5A-2vi" secondAttribute="bottom" constant="20" id="Sjj-Qi-kwN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rvd-Ie-Zfx" secondAttribute="bottom" constant="40" id="cSV-EM-ED9"/>
+                            <constraint firstItem="rvd-Ie-Zfx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="dPp-ZY-A3i"/>
+                            <constraint firstItem="tEh-YA-oVp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iZB-HF-mNW"/>
+                            <constraint firstItem="tEh-YA-oVp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mUC-EU-Ymr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rvd-Ie-Zfx" secondAttribute="trailing" constant="369" id="mVS-Ng-qEl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oSP-5A-2vi" secondAttribute="trailing" constant="369" id="n9c-Uq-Fja"/>
+                            <constraint firstAttribute="trailing" secondItem="tEh-YA-oVp" secondAttribute="trailing" id="nbg-2d-yPA"/>
+                            <constraint firstItem="oSP-5A-2vi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="uFQ-vu-a0B"/>
+                            <constraint firstItem="tEh-YA-oVp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v8M-rg-6J2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iZB-HF-mNW"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="ez6-qk-EwQ"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="6tb-x8-D5t" id="vHE-ic-NQf"/>
+                        <outlet property="callToActionLabel" destination="rvd-Ie-Zfx" id="u2Z-es-nQd"/>
+                        <outlet property="imageView" destination="fnv-Nu-03N" id="uxX-FZ-hxO"/>
+                        <outlet property="titleLabel" destination="oSP-5A-2vi" id="MfZ-hy-U25"/>
+                        <segue destination="Vd3-B2-fpE" kind="show" id="XyC-eS-h19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1329" y="474"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="LwN-rD-A1i">
+            <objects>
+                <viewController storyboardIdentifier="consent" id="Vd3-B2-fpE" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X15-oq-mZo"/>
+                        <viewControllerLayoutGuide type="bottom" id="bvF-4o-NvZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pzH-5l-uOU">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRP-ow-wuO">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="consent-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zjl-qr-Gx2">
+                                        <rect key="frame" x="405.5" y="-1" width="498" height="501"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zjl-qr-Gx2" secondAttribute="bottom" id="Axp-ax-H4X"/>
+                                    <constraint firstItem="Zjl-qr-Gx2" firstAttribute="centerX" secondItem="IRP-ow-wuO" secondAttribute="centerX" constant="143" id="PkY-YG-zz1"/>
+                                    <constraint firstAttribute="height" constant="500" id="gYQ-tO-k5K"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-nT-45u">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOp-mT-qFi">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-xK-QGg">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRP-ow-wuO" firstAttribute="top" secondItem="pzH-5l-uOU" secondAttribute="top" id="17h-MQ-m7e"/>
+                            <constraint firstItem="aOp-mT-qFi" firstAttribute="top" secondItem="U2l-nT-45u" secondAttribute="bottom" constant="20" id="5ya-RW-Fpw"/>
+                            <constraint firstItem="IRP-ow-wuO" firstAttribute="leading" secondItem="pzH-5l-uOU" secondAttribute="leading" id="8Ko-nw-L8z"/>
+                            <constraint firstItem="U2l-nT-45u" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IRP-ow-wuO" secondAttribute="bottom" id="8ph-LW-N0g"/>
+                            <constraint firstItem="U2l-nT-45u" firstAttribute="leading" secondItem="pzH-5l-uOU" secondAttribute="leading" constant="40" id="Gmz-LM-FoG"/>
+                            <constraint firstItem="j2n-xK-QGg" firstAttribute="leading" secondItem="pzH-5l-uOU" secondAttribute="leading" constant="40" id="Od8-Sx-mdz"/>
+                            <constraint firstAttribute="trailing" secondItem="IRP-ow-wuO" secondAttribute="trailing" id="VBL-t7-AyP"/>
+                            <constraint firstItem="j2n-xK-QGg" firstAttribute="top" secondItem="aOp-mT-qFi" secondAttribute="bottom" constant="20" id="VQp-Ym-3Yd"/>
+                            <constraint firstItem="bvF-4o-NvZ" firstAttribute="top" secondItem="j2n-xK-QGg" secondAttribute="bottom" constant="40" id="adV-gl-Zyt"/>
+                            <constraint firstItem="IRP-ow-wuO" firstAttribute="top" secondItem="X15-oq-mZo" secondAttribute="bottom" id="mvE-6a-TeQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U2l-nT-45u" secondAttribute="trailing" constant="369" id="os5-w9-oBQ"/>
+                            <constraint firstItem="aOp-mT-qFi" firstAttribute="leading" secondItem="pzH-5l-uOU" secondAttribute="leading" constant="40" id="rK9-Nn-9O5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOp-mT-qFi" secondAttribute="trailing" constant="369" id="sWs-ob-Pwq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j2n-xK-QGg" secondAttribute="trailing" constant="369" id="t08-tt-M19"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mvE-6a-TeQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="aOp-mT-qFi" id="luK-l9-YL0"/>
+                        <outlet property="callToActionLabel" destination="j2n-xK-QGg" id="YgX-DZ-zrx"/>
+                        <outlet property="imageView" destination="Zjl-qr-Gx2" id="Dtd-uJ-1W5"/>
+                        <outlet property="titleLabel" destination="U2l-nT-45u" id="vfF-Vz-Osm"/>
+                        <segue destination="M8k-EJ-D5a" kind="show" id="s7X-Ik-vb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2P-af-Kok" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="474"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="DvS-AL-6GW">
+            <objects>
+                <viewController storyboardIdentifier="personalinfo" id="M8k-EJ-D5a" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Szc-kL-l08"/>
+                        <viewControllerLayoutGuide type="bottom" id="LK6-iF-o2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4mp-xn-HLL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ux-Dz-kaf">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal-info-icon" translatesAutoresizingMaskIntoConstraints="NO" id="heg-Bl-PQ9">
+                                        <rect key="frame" x="416" y="23" width="477" height="477"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="heg-Bl-PQ9" secondAttribute="bottom" id="1Qh-CC-zt1"/>
+                                    <constraint firstItem="heg-Bl-PQ9" firstAttribute="centerX" secondItem="9Ux-Dz-kaf" secondAttribute="centerX" constant="143" id="EUu-ZK-cIq"/>
+                                    <constraint firstAttribute="height" constant="500" id="EoA-3L-zwe"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psb-Pc-oAE">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyZ-Tb-kQK">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-bW-wu7">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JyZ-Tb-kQK" firstAttribute="top" secondItem="Psb-Pc-oAE" secondAttribute="bottom" constant="20" id="36g-Wa-Hy7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a6k-bW-wu7" secondAttribute="trailing" constant="369" id="5lS-Wy-XQm"/>
+                            <constraint firstItem="JyZ-Tb-kQK" firstAttribute="leading" secondItem="4mp-xn-HLL" secondAttribute="leading" constant="40" id="8de-4w-k9p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Psb-Pc-oAE" secondAttribute="trailing" constant="369" id="9KG-nB-iNQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JyZ-Tb-kQK" secondAttribute="trailing" constant="369" id="C5B-Vu-kiV"/>
+                            <constraint firstItem="LK6-iF-o2x" firstAttribute="top" secondItem="a6k-bW-wu7" secondAttribute="bottom" constant="40" id="Oeq-SE-ElY"/>
+                            <constraint firstItem="9Ux-Dz-kaf" firstAttribute="leading" secondItem="4mp-xn-HLL" secondAttribute="leading" id="T18-6u-HdN"/>
+                            <constraint firstItem="a6k-bW-wu7" firstAttribute="leading" secondItem="4mp-xn-HLL" secondAttribute="leading" constant="40" id="TH3-eO-5Tj"/>
+                            <constraint firstItem="a6k-bW-wu7" firstAttribute="top" secondItem="JyZ-Tb-kQK" secondAttribute="bottom" constant="20" id="U3Z-bG-7MA"/>
+                            <constraint firstItem="Psb-Pc-oAE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9Ux-Dz-kaf" secondAttribute="bottom" id="Wqm-1i-No2"/>
+                            <constraint firstItem="Psb-Pc-oAE" firstAttribute="leading" secondItem="4mp-xn-HLL" secondAttribute="leading" constant="40" id="a2h-WE-IEP"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ux-Dz-kaf" secondAttribute="trailing" id="e7E-nT-kGm"/>
+                            <constraint firstItem="9Ux-Dz-kaf" firstAttribute="top" secondItem="4mp-xn-HLL" secondAttribute="top" id="hOM-Bs-9Zz"/>
+                            <constraint firstItem="9Ux-Dz-kaf" firstAttribute="top" secondItem="Szc-kL-l08" secondAttribute="bottom" id="tuk-hK-Kgb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tuk-hK-Kgb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="JyZ-Tb-kQK" id="h0N-eH-d78"/>
+                        <outlet property="callToActionLabel" destination="a6k-bW-wu7" id="mbl-l7-4Hh"/>
+                        <outlet property="imageView" destination="heg-Bl-PQ9" id="tei-2l-NAH"/>
+                        <outlet property="titleLabel" destination="Psb-Pc-oAE" id="1BV-n2-BMm"/>
+                        <segue destination="gHT-vW-yQT" kind="show" id="wg6-3o-3CY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYz-kx-ccf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3571" y="474"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="YUI-Hg-ZI0">
+            <objects>
+                <viewController storyboardIdentifier="passcode" id="gHT-vW-yQT" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XZy-4U-GdB"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdI-kb-DGq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdC-kf-mkV">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNb-5E-Cst">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passcode-icon" translatesAutoresizingMaskIntoConstraints="NO" id="p5E-hb-Riv">
+                                        <rect key="frame" x="477.5" y="10" width="354" height="490"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="QRi-xq-DVD"/>
+                                    <constraint firstAttribute="bottom" secondItem="p5E-hb-Riv" secondAttribute="bottom" id="Qih-zp-trV"/>
+                                    <constraint firstItem="p5E-hb-Riv" firstAttribute="centerX" secondItem="HNb-5E-Cst" secondAttribute="centerX" constant="143" id="jF8-F6-Qn5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-Yg-Z3s">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-6h-Zs6">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-Nu-xkK">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="K1B-Nu-xkK" secondAttribute="trailing" constant="369" id="084-oS-9iF"/>
+                            <constraint firstItem="K1B-Nu-xkK" firstAttribute="top" secondItem="diH-6h-Zs6" secondAttribute="bottom" constant="20" id="70L-bk-jTD"/>
+                            <constraint firstItem="HNb-5E-Cst" firstAttribute="leading" secondItem="jdC-kf-mkV" secondAttribute="leading" id="Gel-WG-23p"/>
+                            <constraint firstItem="diH-6h-Zs6" firstAttribute="leading" secondItem="jdC-kf-mkV" secondAttribute="leading" constant="40" id="I7C-Zv-hnv"/>
+                            <constraint firstAttribute="trailing" secondItem="HNb-5E-Cst" secondAttribute="trailing" id="IIp-Wf-q4Z"/>
+                            <constraint firstItem="diH-6h-Zs6" firstAttribute="top" secondItem="EC4-Yg-Z3s" secondAttribute="bottom" constant="20" id="LMI-3t-OBV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="diH-6h-Zs6" secondAttribute="trailing" constant="369" id="OMu-rc-boa"/>
+                            <constraint firstItem="HNb-5E-Cst" firstAttribute="top" secondItem="jdC-kf-mkV" secondAttribute="top" id="Uxu-Gb-HTC"/>
+                            <constraint firstItem="EC4-Yg-Z3s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HNb-5E-Cst" secondAttribute="bottom" id="aNM-fn-SY8"/>
+                            <constraint firstItem="EC4-Yg-Z3s" firstAttribute="leading" secondItem="jdC-kf-mkV" secondAttribute="leading" constant="40" id="iqK-Uj-dvT"/>
+                            <constraint firstItem="HNb-5E-Cst" firstAttribute="top" secondItem="XZy-4U-GdB" secondAttribute="bottom" id="oMf-8N-iag"/>
+                            <constraint firstItem="xdI-kb-DGq" firstAttribute="top" secondItem="K1B-Nu-xkK" secondAttribute="bottom" constant="40" id="qg6-5b-mbe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EC4-Yg-Z3s" secondAttribute="trailing" constant="369" id="qrh-3Z-YKS"/>
+                            <constraint firstItem="K1B-Nu-xkK" firstAttribute="leading" secondItem="jdC-kf-mkV" secondAttribute="leading" constant="40" id="zxI-U4-gOm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oMf-8N-iag"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="diH-6h-Zs6" id="wAm-4F-dPo"/>
+                        <outlet property="callToActionLabel" destination="K1B-Nu-xkK" id="nNP-St-nNL"/>
+                        <outlet property="imageView" destination="p5E-hb-Riv" id="DNy-Xe-ZnV"/>
+                        <outlet property="titleLabel" destination="EC4-Yg-Z3s" id="qis-gm-fsD"/>
+                        <segue destination="qVH-p3-TO7" kind="show" id="d98-PD-vS8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJc-eW-cQr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="1370"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="jyp-QQ-50v">
+            <objects>
+                <viewController storyboardIdentifier="dashboard" id="qVH-p3-TO7" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tu4-oy-itm"/>
+                        <viewControllerLayoutGuide type="bottom" id="emi-BQ-TrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LeV-Zw-RsD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72O-xl-HeZ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-gD-e7b">
+                                        <rect key="frame" x="461" y="0.0" width="387" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dna-gD-e7b" secondAttribute="bottom" id="Dsm-Hq-1hl"/>
+                                    <constraint firstAttribute="height" constant="500" id="bKY-DQ-6cT"/>
+                                    <constraint firstItem="Dna-gD-e7b" firstAttribute="centerX" secondItem="72O-xl-HeZ" secondAttribute="centerX" constant="143" id="ddX-BY-sm3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOZ-dU-VV4">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HH-cN-f9Q">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-Xs-Yn3">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="72O-xl-HeZ" firstAttribute="top" secondItem="LeV-Zw-RsD" secondAttribute="top" id="3Tr-if-VhP"/>
+                            <constraint firstItem="emi-BQ-TrF" firstAttribute="top" secondItem="cYh-Xs-Yn3" secondAttribute="bottom" constant="40" id="3kZ-yt-7fm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JOZ-dU-VV4" secondAttribute="trailing" constant="369" id="AQL-tj-SS7"/>
+                            <constraint firstItem="72O-xl-HeZ" firstAttribute="leading" secondItem="LeV-Zw-RsD" secondAttribute="leading" id="H1f-xS-rME"/>
+                            <constraint firstAttribute="trailing" secondItem="72O-xl-HeZ" secondAttribute="trailing" id="Ihl-ON-VMp"/>
+                            <constraint firstItem="JOZ-dU-VV4" firstAttribute="leading" secondItem="LeV-Zw-RsD" secondAttribute="leading" constant="40" id="NcV-xE-Cjd"/>
+                            <constraint firstItem="JOZ-dU-VV4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="72O-xl-HeZ" secondAttribute="bottom" id="Q0X-Ce-J6r"/>
+                            <constraint firstItem="cYh-Xs-Yn3" firstAttribute="leading" secondItem="LeV-Zw-RsD" secondAttribute="leading" constant="40" id="gar-D7-PBY"/>
+                            <constraint firstItem="1HH-cN-f9Q" firstAttribute="top" secondItem="JOZ-dU-VV4" secondAttribute="bottom" constant="20" id="iKi-yL-oAm"/>
+                            <constraint firstItem="1HH-cN-f9Q" firstAttribute="leading" secondItem="LeV-Zw-RsD" secondAttribute="leading" constant="40" id="mZF-pe-A2Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1HH-cN-f9Q" secondAttribute="trailing" constant="369" id="mnY-mr-J3i"/>
+                            <constraint firstItem="cYh-Xs-Yn3" firstAttribute="top" secondItem="1HH-cN-f9Q" secondAttribute="bottom" constant="20" id="q4b-Rz-65Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cYh-Xs-Yn3" secondAttribute="trailing" constant="369" id="whK-NV-sdZ"/>
+                            <constraint firstItem="72O-xl-HeZ" firstAttribute="top" secondItem="Tu4-oy-itm" secondAttribute="bottom" id="ySu-Zj-xcQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ySu-Zj-xcQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="1HH-cN-f9Q" id="sha-l2-M6m"/>
+                        <outlet property="callToActionLabel" destination="cYh-Xs-Yn3" id="Qmb-fW-mnP"/>
+                        <outlet property="imageView" destination="Dna-gD-e7b" id="epn-hx-264"/>
+                        <outlet property="titleLabel" destination="JOZ-dU-VV4" id="rzr-m6-McA"/>
+                        <segue destination="Z45-SL-tcb" kind="show" id="g1P-tL-DTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wub-c5-6Jr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="1370"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="B3M-wa-Nlf">
+            <objects>
+                <viewController storyboardIdentifier="newactivity" id="Z45-SL-tcb" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PeB-gB-2o0"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Dw-a1-FBA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YkC-75-MmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xy2-IL-Hcp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-activity-icon" translatesAutoresizingMaskIntoConstraints="NO" id="p3M-P5-3Nt">
+                                        <rect key="frame" x="531" y="29" width="247" height="471"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="6ST-fu-TWs"/>
+                                    <constraint firstItem="p3M-P5-3Nt" firstAttribute="centerX" secondItem="xy2-IL-Hcp" secondAttribute="centerX" constant="143" id="BAN-Xo-qdU"/>
+                                    <constraint firstAttribute="bottom" secondItem="p3M-P5-3Nt" secondAttribute="bottom" id="Pzq-h6-oZU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aht-bC-fZc">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTx-gh-IgF">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-c6-HPl">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Dw-a1-FBA" firstAttribute="top" secondItem="vzp-c6-HPl" secondAttribute="bottom" constant="40" id="3hb-sq-kaI"/>
+                            <constraint firstItem="xy2-IL-Hcp" firstAttribute="leading" secondItem="YkC-75-MmJ" secondAttribute="leading" id="4tS-yd-H9C"/>
+                            <constraint firstItem="xy2-IL-Hcp" firstAttribute="top" secondItem="YkC-75-MmJ" secondAttribute="top" id="97R-Cd-FXo"/>
+                            <constraint firstAttribute="trailing" secondItem="xy2-IL-Hcp" secondAttribute="trailing" id="9t3-gm-hIt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzp-c6-HPl" secondAttribute="trailing" constant="369" id="BZh-no-Hui"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vTx-gh-IgF" secondAttribute="trailing" constant="369" id="CWh-0J-cIn"/>
+                            <constraint firstItem="aht-bC-fZc" firstAttribute="leading" secondItem="YkC-75-MmJ" secondAttribute="leading" constant="40" id="JHR-nx-U2v"/>
+                            <constraint firstItem="aht-bC-fZc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xy2-IL-Hcp" secondAttribute="bottom" id="JZT-B0-U3K"/>
+                            <constraint firstItem="vzp-c6-HPl" firstAttribute="leading" secondItem="YkC-75-MmJ" secondAttribute="leading" constant="40" id="UIE-zJ-f0f"/>
+                            <constraint firstItem="xy2-IL-Hcp" firstAttribute="top" secondItem="PeB-gB-2o0" secondAttribute="bottom" id="VNP-1K-uR2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aht-bC-fZc" secondAttribute="trailing" constant="369" id="WR1-Fa-oUX"/>
+                            <constraint firstItem="vTx-gh-IgF" firstAttribute="top" secondItem="aht-bC-fZc" secondAttribute="bottom" constant="20" id="fkn-yv-HLi"/>
+                            <constraint firstItem="vzp-c6-HPl" firstAttribute="top" secondItem="vTx-gh-IgF" secondAttribute="bottom" constant="20" id="rfy-qt-qD1"/>
+                            <constraint firstItem="vTx-gh-IgF" firstAttribute="leading" secondItem="YkC-75-MmJ" secondAttribute="leading" constant="40" id="w1Y-UA-xls"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VNP-1K-uR2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="vTx-gh-IgF" id="YGP-Dl-BNQ"/>
+                        <outlet property="callToActionLabel" destination="vzp-c6-HPl" id="Nle-lJ-z3D"/>
+                        <outlet property="imageView" destination="p3M-P5-3Nt" id="Mhi-Un-Z8B"/>
+                        <outlet property="titleLabel" destination="aht-bC-fZc" id="jdz-dA-xQf"/>
+                        <segue destination="DoI-VC-t8H" kind="show" id="dUl-hx-daS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfs-zh-a7V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="1370"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="fqM-bG-A9g">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="DoI-VC-t8H" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VGw-aT-gTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="i06-yC-Cvc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7vQ-Vq-JLE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vY-8Y-Vcd">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Lx9-Vb-HLG">
+                                        <rect key="frame" x="416" y="23" width="477" height="477"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="OHn-Je-fcZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lx9-Vb-HLG" secondAttribute="bottom" id="UMj-V6-eV0"/>
+                                    <constraint firstItem="Lx9-Vb-HLG" firstAttribute="centerX" secondItem="5vY-8Y-Vcd" secondAttribute="centerX" constant="143" id="n30-y0-DO3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-XO-9eU">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1N-PC-j0d">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-us-AKa">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jWX-XO-9eU" secondAttribute="trailing" constant="369" id="0lh-P2-hoz"/>
+                            <constraint firstItem="jWX-XO-9eU" firstAttribute="leading" secondItem="7vQ-Vq-JLE" secondAttribute="leading" constant="40" id="1u3-xY-qvf"/>
+                            <constraint firstItem="i06-yC-Cvc" firstAttribute="top" secondItem="TMe-us-AKa" secondAttribute="bottom" constant="40" id="5OC-C8-ikq"/>
+                            <constraint firstItem="TMe-us-AKa" firstAttribute="top" secondItem="m1N-PC-j0d" secondAttribute="bottom" constant="20" id="8t2-Z3-9zX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMe-us-AKa" secondAttribute="trailing" constant="369" id="AVj-cR-U6M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1N-PC-j0d" secondAttribute="trailing" constant="369" id="KXz-FV-Cfq"/>
+                            <constraint firstItem="m1N-PC-j0d" firstAttribute="leading" secondItem="7vQ-Vq-JLE" secondAttribute="leading" constant="40" id="NfC-x6-QAs"/>
+                            <constraint firstItem="5vY-8Y-Vcd" firstAttribute="top" secondItem="7vQ-Vq-JLE" secondAttribute="top" id="P7c-Dn-BFh"/>
+                            <constraint firstItem="5vY-8Y-Vcd" firstAttribute="leading" secondItem="7vQ-Vq-JLE" secondAttribute="leading" id="hg8-Wr-0Rk"/>
+                            <constraint firstItem="TMe-us-AKa" firstAttribute="leading" secondItem="7vQ-Vq-JLE" secondAttribute="leading" constant="40" id="qJI-Z9-sfg"/>
+                            <constraint firstItem="m1N-PC-j0d" firstAttribute="top" secondItem="jWX-XO-9eU" secondAttribute="bottom" constant="20" id="qgx-re-IPW"/>
+                            <constraint firstItem="5vY-8Y-Vcd" firstAttribute="top" secondItem="VGw-aT-gTF" secondAttribute="bottom" id="qyj-mf-thG"/>
+                            <constraint firstAttribute="trailing" secondItem="5vY-8Y-Vcd" secondAttribute="trailing" id="uq5-sE-CjD"/>
+                            <constraint firstItem="jWX-XO-9eU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5vY-8Y-Vcd" secondAttribute="bottom" id="vd8-v1-ePK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qyj-mf-thG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="m1N-PC-j0d" id="KwO-7Z-WFU"/>
+                        <outlet property="callToActionLabel" destination="TMe-us-AKa" id="9HC-4d-YOQ"/>
+                        <outlet property="imageView" destination="Lx9-Vb-HLG" id="F4Y-Df-ElA"/>
+                        <outlet property="titleLabel" destination="jWX-XO-9eU" id="mBF-FQ-Mkq"/>
+                        <segue destination="2kX-hZ-YIs" kind="show" id="os8-bS-Aqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLI-lN-REq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="2266"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="ItT-7W-k0E">
+            <objects>
+                <viewController storyboardIdentifier="existingactivity" id="2kX-hZ-YIs" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="USg-bG-rQS"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbZ-OL-3Q4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ilk-Go-Ajg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-rb-nRv">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exisiting-activity-icon" translatesAutoresizingMaskIntoConstraints="NO" id="72o-kF-t2h">
+                                        <rect key="frame" x="423" y="18" width="463" height="482"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="72o-kF-t2h" secondAttribute="bottom" id="2r9-mU-d3s"/>
+                                    <constraint firstItem="72o-kF-t2h" firstAttribute="centerX" secondItem="mhQ-rb-nRv" secondAttribute="centerX" constant="143" id="Ifa-gY-hZB"/>
+                                    <constraint firstAttribute="height" constant="500" id="Xf6-aU-Az4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0c-zi-BKq">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itf-36-tcr">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-2y-apN">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Itf-36-tcr" secondAttribute="trailing" constant="369" id="5aw-qO-57P"/>
+                            <constraint firstItem="mhQ-rb-nRv" firstAttribute="leading" secondItem="Ilk-Go-Ajg" secondAttribute="leading" id="85B-Gh-eNu"/>
+                            <constraint firstItem="Itf-36-tcr" firstAttribute="leading" secondItem="Ilk-Go-Ajg" secondAttribute="leading" constant="40" id="9IY-Cv-Hki"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f0c-zi-BKq" secondAttribute="trailing" constant="369" id="DPf-mg-oBV"/>
+                            <constraint firstItem="eDk-2y-apN" firstAttribute="leading" secondItem="Ilk-Go-Ajg" secondAttribute="leading" constant="40" id="FWN-PF-5dB"/>
+                            <constraint firstItem="f0c-zi-BKq" firstAttribute="leading" secondItem="Ilk-Go-Ajg" secondAttribute="leading" constant="40" id="TUP-n9-jFp"/>
+                            <constraint firstAttribute="trailing" secondItem="mhQ-rb-nRv" secondAttribute="trailing" id="bAp-QZ-rf6"/>
+                            <constraint firstItem="mhQ-rb-nRv" firstAttribute="top" secondItem="Ilk-Go-Ajg" secondAttribute="top" id="bX2-1Y-SHe"/>
+                            <constraint firstItem="mhQ-rb-nRv" firstAttribute="top" secondItem="USg-bG-rQS" secondAttribute="bottom" id="dY4-Hg-dpR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eDk-2y-apN" secondAttribute="trailing" constant="369" id="gho-6e-iKT"/>
+                            <constraint firstItem="f0c-zi-BKq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mhQ-rb-nRv" secondAttribute="bottom" id="iMu-OP-RsY"/>
+                            <constraint firstItem="Itf-36-tcr" firstAttribute="top" secondItem="f0c-zi-BKq" secondAttribute="bottom" constant="20" id="ibN-X0-vCi"/>
+                            <constraint firstItem="eDk-2y-apN" firstAttribute="top" secondItem="Itf-36-tcr" secondAttribute="bottom" constant="20" id="trh-Ms-r28"/>
+                            <constraint firstItem="xbZ-OL-3Q4" firstAttribute="top" secondItem="eDk-2y-apN" secondAttribute="bottom" constant="40" id="xEH-bz-uFk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dY4-Hg-dpR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="Itf-36-tcr" id="iOE-l2-uLT"/>
+                        <outlet property="callToActionLabel" destination="eDk-2y-apN" id="K7F-8s-y7X"/>
+                        <outlet property="imageView" destination="72o-kF-t2h" id="tBK-gA-Wwp"/>
+                        <outlet property="titleLabel" destination="f0c-zi-BKq" id="axe-jw-x0h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9e-X2-IW9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="2266"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JSq-3v-VKa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1Mo-rL-KwD" customClass="SKDNavigationController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7UF-tG-STk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pu6-SX-QB4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F50-KF-pHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="consent-icon" width="498" height="501"/>
+        <image name="dashboard-icon" width="387" height="500"/>
+        <image name="exisiting-activity-icon" width="463" height="482"/>
+        <image name="new-activity-icon" width="247" height="471"/>
+        <image name="passcode-icon" width="354" height="490"/>
+        <image name="personal-info-icon" width="477" height="477"/>
+        <image name="profile-icon" width="477" height="477"/>
+        <image name="register-icon" width="387" height="500"/>
+    </resources>
 </document>
