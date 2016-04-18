@@ -15,10 +15,12 @@ class SKDNavigationController: UINavigationController {
     let animator = SKDAnimator()
     let uuidServiceString = "c00eed18-0480-11e6-b512-3e1d05defe78"
     let uuidCharacteristicString = "d50aa268-0483-11e6-b512-3e1d05defe78"
+    let uuidCharacteristicWriteString = "97f755ac-054a-11e6-b512-3e1d05defe78"
     
     // Properties
     var centralManager: CBCentralManager?
     var discoveredPeripheral: CBPeripheral?
+    var resetCharacteristic: CBCharacteristic?
     var data: NSMutableData?
     var currentIdentifier = ""
     
@@ -63,6 +65,11 @@ class SKDNavigationController: UINavigationController {
     override func viewDidLoad() {
         
         delegate = self
+        
+        let gestures = UITapGestureRecognizer(target: self, action: "reset:")
+        gestures.numberOfTapsRequired = 3
+        
+        view.addGestureRecognizer(gestures)
         
         // Start up the CBCentralManager
         centralManager  = CBCentralManager.init(delegate: self, queue: nil)
@@ -109,12 +116,23 @@ class SKDNavigationController: UINavigationController {
     
     func handleMessage(message: String) {
         
-        if (message != currentIdentifier) {
+        if (message != currentIdentifier && message != "") {
             
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier(message)
             setViewControllers([vc], animated: true)
             currentIdentifier = message
+        }
+    }
+    
+    func reset(gestureRecognizer: UITapGestureRecognizer) {
+        
+        print("Reseting")
+        
+        let data = "RESET".dataUsingEncoding(NSUTF8StringEncoding)
+        if let data = data {
+            
+            discoveredPeripheral?.writeValue(data, forCharacteristic: resetCharacteristic!, type: .WithoutResponse)
         }
     }
 }
@@ -260,6 +278,7 @@ extension SKDNavigationController: CBPeripheralDelegate {
             for service in services {
                 
                 peripheral.discoverCharacteristics([CBUUID.init(string: uuidCharacteristicString)], forService: service)
+                peripheral.discoverCharacteristics([CBUUID.init(string: uuidCharacteristicWriteString)], forService: service)
             }
         }
     }
@@ -279,6 +298,11 @@ extension SKDNavigationController: CBPeripheralDelegate {
                 if (characteristic.UUID == CBUUID.init(string: uuidCharacteristicString)) {
                     
                     peripheral.setNotifyValue(true, forCharacteristic: characteristic)
+                }
+                if (characteristic.UUID == CBUUID.init(string: uuidCharacteristicWriteString)) {
+                    
+                    peripheral.setNotifyValue(false, forCharacteristic: characteristic)
+                    resetCharacteristic = characteristic
                 }
             }
         }
