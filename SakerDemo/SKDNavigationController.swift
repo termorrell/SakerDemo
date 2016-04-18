@@ -20,6 +20,7 @@ class SKDNavigationController: UINavigationController {
     var centralManager: CBCentralManager?
     var discoveredPeripheral: CBPeripheral?
     var data: NSMutableData?
+    var currentIdentifier = ""
     
     lazy var alertLabel: UILabel = {
         
@@ -108,9 +109,13 @@ class SKDNavigationController: UINavigationController {
     
     func handleMessage(message: String) {
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier(message)
-        setViewControllers([vc], animated: true)
+        if (message != currentIdentifier) {
+            
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier(message)
+            setViewControllers([vc], animated: true)
+            currentIdentifier = message
+        }
     }
 }
 
@@ -125,6 +130,7 @@ extension SKDNavigationController: CBCentralManagerDelegate {
         
         // Start scanning
         scan()
+        print("State updated")
     }
     
     func scan() {
@@ -234,6 +240,7 @@ extension SKDNavigationController: CBCentralManagerDelegate {
         
         // Peripheral disconnected so start scanning
         scan()
+        handleMessage("scanning")
     }
 }
 

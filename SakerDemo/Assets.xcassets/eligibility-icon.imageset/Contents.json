@@ -2,17 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "register-icon.png",
+      "filename" : "eligibility-icon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "register-icon@2x.png",
+      "filename" : "eligibility-icon@2x.png",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {

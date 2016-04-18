@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,8 +16,27 @@
             <string>HirukoPro-Book</string>
             <string>HirukoPro-Book</string>
             <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
+            <string>HirukoPro-Book</string>
         </mutableArray>
         <mutableArray key="HirukoPro-Lt.otf">
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
+            <string>HirukoPro-Lt</string>
             <string>HirukoPro-Lt</string>
             <string>HirukoPro-Lt</string>
             <string>HirukoPro-Lt</string>
@@ -70,7 +90,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tb-x8-D5t">
                                 <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <string key="text">The register screen allows new users to sign up to the research project and prompts existing users to contact support if they have already registered.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254901960786" green="0.43529411764705883" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -113,12 +133,11 @@
                         <outlet property="callToActionLabel" destination="rvd-Ie-Zfx" id="u2Z-es-nQd"/>
                         <outlet property="imageView" destination="fnv-Nu-03N" id="uxX-FZ-hxO"/>
                         <outlet property="titleLabel" destination="oSP-5A-2vi" id="MfZ-hy-U25"/>
-                        <segue destination="Vd3-B2-fpE" kind="show" id="XyC-eS-h19"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="474"/>
+            <point key="canvasLocation" x="517" y="462"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="LwN-rD-A1i">
@@ -146,21 +165,21 @@
                                     <constraint firstAttribute="height" constant="500" id="gYQ-tO-k5K"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-nT-45u">
-                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consent Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-nT-45u">
+                                <rect key="frame" x="40" y="523.5" width="595" height="60"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
                                 <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOp-mT-qFi">
-                                <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <rect key="frame" x="40" y="603.5" width="595" height="84"/>
+                                <string key="text">These screens provide participants with information about the study and how their data will be held and processed. Using this information participants can make an informed decision whether to participate.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-xK-QGg">
-                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on 'Next' on each screen to proceed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-xK-QGg">
+                                <rect key="frame" x="40" y="707.5" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -196,12 +215,11 @@
                         <outlet property="callToActionLabel" destination="j2n-xK-QGg" id="YgX-DZ-zrx"/>
                         <outlet property="imageView" destination="Zjl-qr-Gx2" id="Dtd-uJ-1W5"/>
                         <outlet property="titleLabel" destination="U2l-nT-45u" id="vfF-Vz-Osm"/>
-                        <segue destination="M8k-EJ-D5a" kind="show" id="s7X-Ik-vb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2P-af-Kok" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447" y="474"/>
+            <point key="canvasLocation" x="1635" y="462"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="DvS-AL-6GW">
@@ -229,20 +247,20 @@
                                     <constraint firstAttribute="height" constant="500" id="EoA-3L-zwe"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psb-Pc-oAE">
-                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psb-Pc-oAE">
+                                <rect key="frame" x="40" y="523" width="595" height="60"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
                                 <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyZ-Tb-kQK">
-                                <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <rect key="frame" x="40" y="603" width="595" height="84"/>
+                                <string key="text">The personal information screen allows participants to provide information needed to take part in the study, such as a name and contact email. This identifiable data is held separately from the data collected in the study. </string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-bW-wu7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name and tap ‘Next’ to proceed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-bW-wu7">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
@@ -279,12 +297,11 @@
                         <outlet property="callToActionLabel" destination="a6k-bW-wu7" id="mbl-l7-4Hh"/>
                         <outlet property="imageView" destination="heg-Bl-PQ9" id="tei-2l-NAH"/>
                         <outlet property="titleLabel" destination="Psb-Pc-oAE" id="1BV-n2-BMm"/>
-                        <segue destination="gHT-vW-yQT" kind="show" id="wg6-3o-3CY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYz-kx-ccf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3571" y="474"/>
+            <point key="canvasLocation" x="2759" y="462"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="YUI-Hg-ZI0">
@@ -320,12 +337,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-6h-Zs6">
                                 <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <string key="text">The passcode screen allows new users to set a passcode which is used to prevent unauthorised access to the data. Data held on the device is encrypted until the device is unlocked.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-Nu-xkK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter four digits and then confirm the passcode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-Nu-xkK">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -362,7 +379,6 @@
                         <outlet property="callToActionLabel" destination="K1B-Nu-xkK" id="nNP-St-nNL"/>
                         <outlet property="imageView" destination="p5E-hb-Riv" id="DNy-Xe-ZnV"/>
                         <outlet property="titleLabel" destination="EC4-Yg-Z3s" id="qis-gm-fsD"/>
-                        <segue destination="qVH-p3-TO7" kind="show" id="d98-PD-vS8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJc-eW-cQr" sceneMemberID="firstResponder"/>
@@ -403,12 +419,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HH-cN-f9Q">
                                 <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <string key="text">The dashboard is used to summarise the participant's activity information. Providing a summary makes the application useful for participants and encourages participation.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-Xs-Yn3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘+’ button to add a new activity or just explore" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-Xs-Yn3">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
@@ -445,7 +461,6 @@
                         <outlet property="callToActionLabel" destination="cYh-Xs-Yn3" id="Qmb-fW-mnP"/>
                         <outlet property="imageView" destination="Dna-gD-e7b" id="epn-hx-264"/>
                         <outlet property="titleLabel" destination="JOZ-dU-VV4" id="rzr-m6-McA"/>
-                        <segue destination="Z45-SL-tcb" kind="show" id="g1P-tL-DTF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wub-c5-6Jr" sceneMemberID="firstResponder"/>
@@ -486,12 +501,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTx-gh-IgF">
                                 <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <string key="text">The new activity screen allows participants to record data and submit it to the research study. Participants can then label the data before it is uploaded for processing.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-c6-HPl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Start’ button to start recording your first activity" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-c6-HPl">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.27058823529411763" green="0.53333333333333333" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
@@ -528,7 +543,6 @@
                         <outlet property="callToActionLabel" destination="vzp-c6-HPl" id="Nle-lJ-z3D"/>
                         <outlet property="imageView" destination="p3M-P5-3Nt" id="Mhi-Un-Z8B"/>
                         <outlet property="titleLabel" destination="aht-bC-fZc" id="jdz-dA-xQf"/>
-                        <segue destination="DoI-VC-t8H" kind="show" id="dUl-hx-daS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfs-zh-a7V" sceneMemberID="firstResponder"/>
@@ -569,12 +583,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1N-PC-j0d">
                                 <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                                <string key="text">The profile screen gives participants a summary of all the personal information they have given to the study. Participants can also withdraw from the study on this screen.</string>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-us-AKa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Withdraw’ to remove all data from the study" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-us-AKa">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.93333333330000001" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -611,7 +625,6 @@
                         <outlet property="callToActionLabel" destination="TMe-us-AKa" id="9HC-4d-YOQ"/>
                         <outlet property="imageView" destination="Lx9-Vb-HLG" id="F4Y-Df-ElA"/>
                         <outlet property="titleLabel" destination="jWX-XO-9eU" id="mBF-FQ-Mkq"/>
-                        <segue destination="2kX-hZ-YIs" kind="show" id="os8-bS-Aqt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLI-lN-REq" sceneMemberID="firstResponder"/>
@@ -645,19 +658,18 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0c-zi-BKq">
-                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <rect key="frame" x="40" y="565" width="595" height="60"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
                                 <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itf-36-tcr">
-                                <rect key="frame" x="40" y="624" width="595" height="63"/>
-                                <string key="text">The register screen allows new users to sign up to the research study and prompts existing users to contact support if they have already registered.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="The existing activity screen allows participants to view previous walks and view a summary of the labeled sections." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itf-36-tcr">
+                                <rect key="frame" x="40" y="645" width="595" height="42"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Join Study’ button to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-2y-apN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe from the left of the screen to go return to the dashboard" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-2y-apN">
                                 <rect key="frame" x="40" y="707" width="595" height="21"/>
                                 <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
                                 <color key="textColor" red="0.31764705882352939" green="0.80392156862745101" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
@@ -711,22 +723,572 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pu6-SX-QB4"/>
+                        <segue destination="qGx-2E-s4I" kind="relationship" relationship="rootViewController" id="8Gb-e4-inB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F50-KF-pHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="474"/>
+            <point key="canvasLocation" x="305" y="-438"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xWY-ix-cDU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6o2-83-uge" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="scanning" id="qGx-2E-s4I" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="umg-Rg-Zbe"/>
+                        <viewControllerLayoutGuide type="bottom" id="jPV-Rh-oN2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rot-li-1s8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hln-im-D1x">
+                                <rect key="frame" x="399.5" y="261.5" width="225" height="245"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="Please connect a device" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHI-oJ-SlE">
+                                        <rect key="frame" x="0.0" y="224" width="225" height="21"/>
+                                        <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                        <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GX7-nR-gFf">
+                                        <rect key="frame" x="55.5" y="0.0" width="114" height="194"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="9Of-OC-C46"/>
+                                            <constraint firstAttribute="width" secondItem="GX7-nR-gFf" secondAttribute="height" multiplier="114:194" id="CBr-JC-PXr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iHI-oJ-SlE" firstAttribute="top" secondItem="GX7-nR-gFf" secondAttribute="bottom" constant="30" id="Jj9-Tc-PtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="iHI-oJ-SlE" secondAttribute="trailing" id="PfR-Pl-Zou"/>
+                                    <constraint firstAttribute="bottom" secondItem="iHI-oJ-SlE" secondAttribute="bottom" id="Scd-fq-Utj"/>
+                                    <constraint firstItem="GX7-nR-gFf" firstAttribute="top" secondItem="hln-im-D1x" secondAttribute="top" id="dXi-3w-njw"/>
+                                    <constraint firstItem="iHI-oJ-SlE" firstAttribute="leading" secondItem="hln-im-D1x" secondAttribute="leading" id="eFw-60-YwJ"/>
+                                    <constraint firstItem="GX7-nR-gFf" firstAttribute="centerX" secondItem="hln-im-D1x" secondAttribute="centerX" id="hNF-TV-2kh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hln-im-D1x" firstAttribute="centerY" secondItem="Rot-li-1s8" secondAttribute="centerY" id="MUv-0L-h3j"/>
+                            <constraint firstItem="hln-im-D1x" firstAttribute="centerX" secondItem="Rot-li-1s8" secondAttribute="centerX" id="gmd-dq-Z8g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RUN-bG-Ucs"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1635" y="-438"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="cLa-xT-i3P">
+            <objects>
+                <viewController storyboardIdentifier="eligibility" id="s1Z-j3-lcC" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfh-rY-3oV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cag-zc-bCR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="apj-AT-aEy">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRJ-JM-LwB">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eligibility-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3sb-JK-Jnl">
+                                        <rect key="frame" x="490" y="171" width="329" height="329"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3sb-JK-Jnl" secondAttribute="bottom" id="4YQ-nF-PLV"/>
+                                    <constraint firstItem="3sb-JK-Jnl" firstAttribute="centerX" secondItem="YRJ-JM-LwB" secondAttribute="centerX" constant="143" id="Dgp-z8-2ou"/>
+                                    <constraint firstAttribute="height" constant="500" id="fDC-KY-gqi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llZ-p5-Gyn">
+                                <rect key="frame" x="40" y="565" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.80392156859999997" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="The eligibility screen is used to ensure that all participants are old enough and able to join the study." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLU-P1-lAe">
+                                <rect key="frame" x="40" y="645" width="595" height="42"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap ‘Yes’ on each question to proceed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy5-f2-ZJ5">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.80392156859999997" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cLU-P1-lAe" secondAttribute="trailing" constant="369" id="2jT-bB-Kvv"/>
+                            <constraint firstAttribute="trailing" secondItem="YRJ-JM-LwB" secondAttribute="trailing" id="3VZ-hR-JvU"/>
+                            <constraint firstItem="Oy5-f2-ZJ5" firstAttribute="leading" secondItem="apj-AT-aEy" secondAttribute="leading" constant="40" id="7vj-et-LGE"/>
+                            <constraint firstItem="YRJ-JM-LwB" firstAttribute="leading" secondItem="apj-AT-aEy" secondAttribute="leading" id="HAV-pm-CKA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="llZ-p5-Gyn" secondAttribute="trailing" constant="369" id="Kvn-CH-Ich"/>
+                            <constraint firstItem="llZ-p5-Gyn" firstAttribute="leading" secondItem="apj-AT-aEy" secondAttribute="leading" constant="40" id="TIb-Ub-qaB"/>
+                            <constraint firstItem="Oy5-f2-ZJ5" firstAttribute="top" secondItem="cLU-P1-lAe" secondAttribute="bottom" constant="20" id="Vyl-q3-CiM"/>
+                            <constraint firstItem="cag-zc-bCR" firstAttribute="top" secondItem="Oy5-f2-ZJ5" secondAttribute="bottom" constant="40" id="WQw-z5-LYB"/>
+                            <constraint firstItem="llZ-p5-Gyn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YRJ-JM-LwB" secondAttribute="bottom" id="f43-LT-usD"/>
+                            <constraint firstItem="cLU-P1-lAe" firstAttribute="top" secondItem="llZ-p5-Gyn" secondAttribute="bottom" constant="20" id="fck-ha-PKq"/>
+                            <constraint firstItem="YRJ-JM-LwB" firstAttribute="top" secondItem="apj-AT-aEy" secondAttribute="top" id="fk3-II-l3Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oy5-f2-ZJ5" secondAttribute="trailing" constant="369" id="hSM-bW-lCU"/>
+                            <constraint firstItem="YRJ-JM-LwB" firstAttribute="top" secondItem="wfh-rY-3oV" secondAttribute="bottom" id="ko2-gg-IVi"/>
+                            <constraint firstItem="cLU-P1-lAe" firstAttribute="leading" secondItem="apj-AT-aEy" secondAttribute="leading" constant="40" id="pOS-v3-yoj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ko2-gg-IVi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="cLU-P1-lAe" id="HIJ-Qc-gt7"/>
+                        <outlet property="callToActionLabel" destination="Oy5-f2-ZJ5" id="84O-LO-Kjk"/>
+                        <outlet property="imageView" destination="3sb-JK-Jnl" id="2Ze-Ah-Nxy"/>
+                        <outlet property="titleLabel" destination="llZ-p5-Gyn" id="Bjt-Gw-vez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9Y-Wq-QUe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3861" y="462"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="bvh-lQ-Fcc">
+            <objects>
+                <viewController storyboardIdentifier="giveconsent" id="PRx-aS-XaH" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kza-ne-zHU"/>
+                        <viewControllerLayoutGuide type="bottom" id="ft5-Oq-hrj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="odJ-T3-PSb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-X3-TZ2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="give-consent-icon" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-R2-Os4">
+                                        <rect key="frame" x="350.5" y="0.0" width="608" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="L5C-R2-Os4" firstAttribute="centerX" secondItem="WJT-X3-TZ2" secondAttribute="centerX" constant="143" id="0GG-T8-iIa"/>
+                                    <constraint firstAttribute="height" constant="500" id="9jh-70-64B"/>
+                                    <constraint firstAttribute="bottom" secondItem="L5C-R2-Os4" secondAttribute="bottom" id="F1v-qx-rXB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCI-hw-zNb">
+                                <rect key="frame" x="40" y="565.5" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.80392156859999997" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" text="The consent screen allows participants to digitally agree to the study" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al6-zd-hQP">
+                                <rect key="frame" x="40" y="645.5" width="595" height="42"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap ‘Agree’ both times to proceed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgq-BL-UiC">
+                                <rect key="frame" x="40" y="707.5" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.80392156859999997" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pgq-BL-UiC" firstAttribute="leading" secondItem="odJ-T3-PSb" secondAttribute="leading" constant="40" id="1eB-B3-GIb"/>
+                            <constraint firstItem="ft5-Oq-hrj" firstAttribute="top" secondItem="Pgq-BL-UiC" secondAttribute="bottom" constant="40" id="2qv-9z-Mag"/>
+                            <constraint firstItem="WJT-X3-TZ2" firstAttribute="top" secondItem="odJ-T3-PSb" secondAttribute="top" id="8un-mS-jE0"/>
+                            <constraint firstItem="Al6-zd-hQP" firstAttribute="leading" secondItem="odJ-T3-PSb" secondAttribute="leading" constant="40" id="DUU-Sr-tC3"/>
+                            <constraint firstAttribute="trailing" secondItem="WJT-X3-TZ2" secondAttribute="trailing" id="E0p-xc-Nhm"/>
+                            <constraint firstItem="Al6-zd-hQP" firstAttribute="top" secondItem="sCI-hw-zNb" secondAttribute="bottom" constant="20" id="IIU-YI-jxd"/>
+                            <constraint firstItem="Pgq-BL-UiC" firstAttribute="top" secondItem="Al6-zd-hQP" secondAttribute="bottom" constant="20" id="NkW-mb-tkQ"/>
+                            <constraint firstItem="WJT-X3-TZ2" firstAttribute="leading" secondItem="odJ-T3-PSb" secondAttribute="leading" id="V22-RR-YFc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pgq-BL-UiC" secondAttribute="trailing" constant="369" id="Xk5-Ld-MLU"/>
+                            <constraint firstItem="WJT-X3-TZ2" firstAttribute="top" secondItem="Kza-ne-zHU" secondAttribute="bottom" id="ebn-Kz-Ddg"/>
+                            <constraint firstItem="sCI-hw-zNb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WJT-X3-TZ2" secondAttribute="bottom" id="jPw-xo-pbe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sCI-hw-zNb" secondAttribute="trailing" constant="369" id="qYY-4v-F1o"/>
+                            <constraint firstItem="sCI-hw-zNb" firstAttribute="leading" secondItem="odJ-T3-PSb" secondAttribute="leading" constant="40" id="uSQ-AP-Lyp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Al6-zd-hQP" secondAttribute="trailing" constant="369" id="yhl-e1-IR4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ebn-Kz-Ddg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="Al6-zd-hQP" id="7W4-ml-8CB"/>
+                        <outlet property="callToActionLabel" destination="Pgq-BL-UiC" id="dzL-4K-0iY"/>
+                        <outlet property="imageView" destination="L5C-R2-Os4" id="6a6-as-4Sy"/>
+                        <outlet property="titleLabel" destination="sCI-hw-zNb" id="yCB-s0-Gmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Pi-co-E5S" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4962" y="462"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="hcw-2A-ObK">
+            <objects>
+                <viewController storyboardIdentifier="additionalinfo" id="kUg-Ec-VpV" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hwp-Cc-SUo"/>
+                        <viewControllerLayoutGuide type="bottom" id="727-5n-At7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BqM-wE-96r">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBJ-XI-roa">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal-info-icon" translatesAutoresizingMaskIntoConstraints="NO" id="OQN-1U-noZ">
+                                        <rect key="frame" x="416" y="23" width="477" height="477"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OQN-1U-noZ" firstAttribute="centerX" secondItem="RBJ-XI-roa" secondAttribute="centerX" constant="143" id="Mke-jS-hKV"/>
+                                    <constraint firstAttribute="bottom" secondItem="OQN-1U-noZ" secondAttribute="bottom" id="pHf-aC-mgc"/>
+                                    <constraint firstAttribute="height" constant="500" id="rQk-Bq-mCP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-hK-e9v">
+                                <rect key="frame" x="40" y="502" width="634" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rA-1X-kiG">
+                                <rect key="frame" x="40" y="582" width="595" height="105"/>
+                                <string key="text">The additional information screen allows participants to give information which is used in the study to determine accuracy among groups of the population. This data is held separately from the identifiable data, and cannot be traced back to a user's identifiable information. </string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the information and tap 'Next' to proceed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUo-uB-YmT">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RBJ-XI-roa" secondAttribute="trailing" id="2V7-jr-1Xi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kUW-hK-e9v" secondAttribute="trailing" constant="330" id="719-lE-5an"/>
+                            <constraint firstItem="kUW-hK-e9v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RBJ-XI-roa" secondAttribute="bottom" id="D7W-0F-g6O"/>
+                            <constraint firstItem="RBJ-XI-roa" firstAttribute="top" secondItem="BqM-wE-96r" secondAttribute="top" id="M0g-mb-2Eq"/>
+                            <constraint firstItem="VUo-uB-YmT" firstAttribute="leading" secondItem="BqM-wE-96r" secondAttribute="leading" constant="40" id="VNc-IM-1Kp"/>
+                            <constraint firstItem="RBJ-XI-roa" firstAttribute="top" secondItem="Hwp-Cc-SUo" secondAttribute="bottom" id="a0K-SX-PdT"/>
+                            <constraint firstItem="727-5n-At7" firstAttribute="top" secondItem="VUo-uB-YmT" secondAttribute="bottom" constant="40" id="dCp-3S-KQl"/>
+                            <constraint firstItem="2rA-1X-kiG" firstAttribute="leading" secondItem="BqM-wE-96r" secondAttribute="leading" constant="40" id="esf-uR-MTj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2rA-1X-kiG" secondAttribute="trailing" constant="369" id="gxS-ub-C1g"/>
+                            <constraint firstItem="RBJ-XI-roa" firstAttribute="leading" secondItem="BqM-wE-96r" secondAttribute="leading" id="iHN-fN-PVD"/>
+                            <constraint firstItem="2rA-1X-kiG" firstAttribute="top" secondItem="kUW-hK-e9v" secondAttribute="bottom" constant="20" id="j5Z-oo-g8K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VUo-uB-YmT" secondAttribute="trailing" constant="369" id="oVJ-YS-Jpl"/>
+                            <constraint firstItem="VUo-uB-YmT" firstAttribute="top" secondItem="2rA-1X-kiG" secondAttribute="bottom" constant="20" id="qqz-Z1-xli"/>
+                            <constraint firstItem="kUW-hK-e9v" firstAttribute="leading" secondItem="BqM-wE-96r" secondAttribute="leading" constant="40" id="tQJ-Et-nGU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a0K-SX-PdT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="2rA-1X-kiG" id="EcZ-Bj-lf1"/>
+                        <outlet property="callToActionLabel" destination="VUo-uB-YmT" id="EGc-Yg-fUg"/>
+                        <outlet property="imageView" destination="OQN-1U-noZ" id="3WX-S0-c9a"/>
+                        <outlet property="titleLabel" destination="kUW-hK-e9v" id="gIw-ff-PEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLB-uv-mtS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3861" y="1370"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="Dnx-9I-5Vo">
+            <objects>
+                <viewController storyboardIdentifier="recordactivity" id="yay-zp-HvM" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wB7-yO-T2D"/>
+                        <viewControllerLayoutGuide type="bottom" id="SDe-gH-7zo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GVV-Ey-8n5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9R-Ma-naI">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record-activity-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-oX-5pP">
+                                        <rect key="frame" x="453.5" y="23" width="402" height="477"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="GKf-Fi-w18"/>
+                                    <constraint firstAttribute="bottom" secondItem="DlK-oX-5pP" secondAttribute="bottom" id="h3d-T3-Fsb"/>
+                                    <constraint firstItem="DlK-oX-5pP" firstAttribute="centerX" secondItem="r9R-Ma-naI" secondAttribute="centerX" constant="143" id="njz-fd-m4w"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVB-nJ-abf">
+                                <rect key="frame" x="40" y="523" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqp-gh-FKE">
+                                <rect key="frame" x="40" y="603" width="595" height="84"/>
+                                <string key="text">The record activity screen shows participants their current route and gives a summary of the time and distance covered. The application uses pedometer distance to remove bias from other forms of transport.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘Stop’ button to end the recording" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-Bu-hrT">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YwA-Bu-hrT" firstAttribute="leading" secondItem="GVV-Ey-8n5" secondAttribute="leading" constant="40" id="AFD-rf-No3"/>
+                            <constraint firstItem="r9R-Ma-naI" firstAttribute="top" secondItem="wB7-yO-T2D" secondAttribute="bottom" id="Bl7-5z-J9H"/>
+                            <constraint firstItem="r9R-Ma-naI" firstAttribute="top" secondItem="GVV-Ey-8n5" secondAttribute="top" id="DzM-Rb-XXF"/>
+                            <constraint firstItem="YwA-Bu-hrT" firstAttribute="top" secondItem="Pqp-gh-FKE" secondAttribute="bottom" constant="20" id="K9I-os-HfS"/>
+                            <constraint firstItem="Pqp-gh-FKE" firstAttribute="leading" secondItem="GVV-Ey-8n5" secondAttribute="leading" constant="40" id="Msu-BZ-PwZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YwA-Bu-hrT" secondAttribute="trailing" constant="369" id="R0b-cf-urq"/>
+                            <constraint firstItem="lVB-nJ-abf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="r9R-Ma-naI" secondAttribute="bottom" id="YO1-CF-waM"/>
+                            <constraint firstItem="lVB-nJ-abf" firstAttribute="leading" secondItem="GVV-Ey-8n5" secondAttribute="leading" constant="40" id="Z6g-kr-k0W"/>
+                            <constraint firstItem="r9R-Ma-naI" firstAttribute="leading" secondItem="GVV-Ey-8n5" secondAttribute="leading" id="eDD-3R-cc1"/>
+                            <constraint firstAttribute="trailing" secondItem="r9R-Ma-naI" secondAttribute="trailing" id="edE-0v-dCx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pqp-gh-FKE" secondAttribute="trailing" constant="369" id="lc1-hf-k9t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lVB-nJ-abf" secondAttribute="trailing" constant="369" id="oJZ-Iw-MfV"/>
+                            <constraint firstItem="Pqp-gh-FKE" firstAttribute="top" secondItem="lVB-nJ-abf" secondAttribute="bottom" constant="20" id="sEH-la-Rjd"/>
+                            <constraint firstItem="SDe-gH-7zo" firstAttribute="top" secondItem="YwA-Bu-hrT" secondAttribute="bottom" constant="40" id="zvM-Lw-iR5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bl7-5z-J9H"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="Pqp-gh-FKE" id="RJN-6p-qZT"/>
+                        <outlet property="callToActionLabel" destination="YwA-Bu-hrT" id="7fR-Nm-Bhc"/>
+                        <outlet property="imageView" destination="DlK-oX-5pP" id="mGI-vS-snP"/>
+                        <outlet property="titleLabel" destination="lVB-nJ-abf" id="osb-eJ-aiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytv-hG-etz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="2266"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="aj7-AS-gGn">
+            <objects>
+                <viewController storyboardIdentifier="stopactivity" id="9Qz-Mf-b86" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Do9-eL-NY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="7uO-0R-pNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rPu-rH-IZg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geE-Op-wfh">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-uo-f1g">
+                                        <rect key="frame" x="348.5" y="0.0" width="612" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="9Hl-JY-JhU"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZNa-uo-f1g" secondAttribute="bottom" id="Jei-ql-JiS"/>
+                                    <constraint firstItem="ZNa-uo-f1g" firstAttribute="centerX" secondItem="geE-Op-wfh" secondAttribute="centerX" constant="143" id="OoS-b3-W5M"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-m5-71K">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cg-kf-vHK">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">The label activity screen allows participants to label the entire route as safe or mark specific sections of the walk with different emotions.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the ‘No’ button to label different sections of the walk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPh-lc-cbr">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.53333333329999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aPh-lc-cbr" secondAttribute="trailing" constant="369" id="3Kt-zH-aLd"/>
+                            <constraint firstAttribute="trailing" secondItem="geE-Op-wfh" secondAttribute="trailing" id="Ea5-oC-nhc"/>
+                            <constraint firstItem="geE-Op-wfh" firstAttribute="top" secondItem="Do9-eL-NY1" secondAttribute="bottom" id="HBA-Yu-1yq"/>
+                            <constraint firstItem="aPh-lc-cbr" firstAttribute="leading" secondItem="rPu-rH-IZg" secondAttribute="leading" constant="40" id="HPE-jb-Kjc"/>
+                            <constraint firstItem="0cg-kf-vHK" firstAttribute="leading" secondItem="rPu-rH-IZg" secondAttribute="leading" constant="40" id="IVh-gp-jlU"/>
+                            <constraint firstItem="7uO-0R-pNX" firstAttribute="top" secondItem="aPh-lc-cbr" secondAttribute="bottom" constant="40" id="TLh-wq-gGg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0cg-kf-vHK" secondAttribute="trailing" constant="369" id="UaP-Da-Jt9"/>
+                            <constraint firstItem="cKt-m5-71K" firstAttribute="leading" secondItem="rPu-rH-IZg" secondAttribute="leading" constant="40" id="Z7S-kU-BhK"/>
+                            <constraint firstItem="aPh-lc-cbr" firstAttribute="top" secondItem="0cg-kf-vHK" secondAttribute="bottom" constant="20" id="ZNC-Aq-Ie1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cKt-m5-71K" secondAttribute="trailing" constant="369" id="daQ-fX-8ld"/>
+                            <constraint firstItem="geE-Op-wfh" firstAttribute="leading" secondItem="rPu-rH-IZg" secondAttribute="leading" id="eMw-r5-Mml"/>
+                            <constraint firstItem="cKt-m5-71K" firstAttribute="top" relation="greaterThanOrEqual" secondItem="geE-Op-wfh" secondAttribute="bottom" id="eT5-xI-FKK"/>
+                            <constraint firstItem="0cg-kf-vHK" firstAttribute="top" secondItem="cKt-m5-71K" secondAttribute="bottom" constant="20" id="faO-Ch-RbO"/>
+                            <constraint firstItem="geE-Op-wfh" firstAttribute="top" secondItem="rPu-rH-IZg" secondAttribute="top" id="r0I-rc-dfl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HBA-Yu-1yq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="0cg-kf-vHK" id="IIq-je-LmF"/>
+                        <outlet property="callToActionLabel" destination="aPh-lc-cbr" id="BHy-sc-21V"/>
+                        <outlet property="imageView" destination="ZNa-uo-f1g" id="nAm-j1-Rac"/>
+                        <outlet property="titleLabel" destination="cKt-m5-71K" id="IRp-BZ-u9a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owE-mQ-Xj7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3861" y="2266"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="yFu-oH-HF0">
+            <objects>
+                <viewController storyboardIdentifier="uploadactivity" id="6Mh-5h-CWM" customClass="SKDContentViewController" customModule="SakerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skA-EI-8lI"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGn-qc-8Go"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y1B-1j-h4U">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJf-5q-DYc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload-activity-icon" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-S8-pFK">
+                                        <rect key="frame" x="335.5" y="0.0" width="638" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2iu-S8-pFK" secondAttribute="bottom" id="jHD-SU-6zO"/>
+                                    <constraint firstItem="2iu-S8-pFK" firstAttribute="centerX" secondItem="RJf-5q-DYc" secondAttribute="centerX" constant="143" id="y9O-R6-K16"/>
+                                    <constraint firstAttribute="height" constant="500" id="ztS-85-ZrZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkc-IC-1mr">
+                                <rect key="frame" x="40" y="544" width="595" height="60"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Book" family="Hiruko Pro" pointSize="60"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.47450980392156861" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-Hw-KG5">
+                                <rect key="frame" x="40" y="624" width="595" height="63"/>
+                                <string key="text">After an activity is labeled, the application processes the labels and compresses the data. This compressed file is then uploaded over a secure connection to the School's VM for processing.</string>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities are uploaded to automatically in the background" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-Zv-f2V">
+                                <rect key="frame" x="40" y="707" width="595" height="21"/>
+                                <fontDescription key="fontDescription" name="HirukoPro-Lt" family="Hiruko Pro" pointSize="21"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.47450980392156861" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RJf-5q-DYc" secondAttribute="trailing" id="29o-ld-IMC"/>
+                            <constraint firstItem="1Pa-Hw-KG5" firstAttribute="leading" secondItem="y1B-1j-h4U" secondAttribute="leading" constant="40" id="BVb-0w-NhG"/>
+                            <constraint firstItem="Mkc-IC-1mr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RJf-5q-DYc" secondAttribute="bottom" id="JMw-Z9-adh"/>
+                            <constraint firstItem="t7V-Zv-f2V" firstAttribute="top" secondItem="1Pa-Hw-KG5" secondAttribute="bottom" constant="20" id="QX4-8o-ndV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Pa-Hw-KG5" secondAttribute="trailing" constant="369" id="YqW-Hg-033"/>
+                            <constraint firstItem="BGn-qc-8Go" firstAttribute="top" secondItem="t7V-Zv-f2V" secondAttribute="bottom" constant="40" id="ZmX-jA-weJ"/>
+                            <constraint firstItem="t7V-Zv-f2V" firstAttribute="leading" secondItem="y1B-1j-h4U" secondAttribute="leading" constant="40" id="aGU-gD-BdN"/>
+                            <constraint firstItem="Mkc-IC-1mr" firstAttribute="leading" secondItem="y1B-1j-h4U" secondAttribute="leading" constant="40" id="dxK-gc-UIL"/>
+                            <constraint firstItem="RJf-5q-DYc" firstAttribute="top" secondItem="skA-EI-8lI" secondAttribute="bottom" id="naE-Ua-VBs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mkc-IC-1mr" secondAttribute="trailing" constant="369" id="pnb-fw-pgY"/>
+                            <constraint firstItem="RJf-5q-DYc" firstAttribute="leading" secondItem="y1B-1j-h4U" secondAttribute="leading" id="uZF-76-pCx"/>
+                            <constraint firstItem="RJf-5q-DYc" firstAttribute="top" secondItem="y1B-1j-h4U" secondAttribute="top" id="zHA-MO-TEQ"/>
+                            <constraint firstItem="1Pa-Hw-KG5" firstAttribute="top" secondItem="Mkc-IC-1mr" secondAttribute="bottom" constant="20" id="zgV-V1-7UY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t7V-Zv-f2V" secondAttribute="trailing" constant="369" id="zo6-oN-yfW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="naE-Ua-VBs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="1Pa-Hw-KG5" id="qWv-Uu-LwV"/>
+                        <outlet property="callToActionLabel" destination="t7V-Zv-f2V" id="VkN-C8-kQF"/>
+                        <outlet property="imageView" destination="2iu-S8-pFK" id="QZL-Zu-Tem"/>
+                        <outlet property="titleLabel" destination="Mkc-IC-1mr" id="IGN-XO-WPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBb-cU-yXa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4988" y="2266"/>
         </scene>
     </scenes>
     <resources>
         <image name="consent-icon" width="498" height="501"/>
         <image name="dashboard-icon" width="387" height="500"/>
+        <image name="device-icon" width="114" height="194"/>
+        <image name="eligibility-icon" width="329" height="329"/>
         <image name="exisiting-activity-icon" width="463" height="482"/>
+        <image name="give-consent-icon" width="608" height="500"/>
+        <image name="label-icon" width="612" height="500"/>
         <image name="new-activity-icon" width="247" height="471"/>
         <image name="passcode-icon" width="354" height="490"/>
         <image name="personal-info-icon" width="477" height="477"/>
         <image name="profile-icon" width="477" height="477"/>
+        <image name="record-activity-icon" width="402" height="477"/>
         <image name="register-icon" width="387" height="500"/>
+        <image name="upload-activity-icon" width="638" height="500"/>
     </resources>
 </document>
